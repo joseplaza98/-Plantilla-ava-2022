@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="getEstudiantes()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary" (click)="openMenu($event)">
+        <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Aprende Programación Orientada a Objetos</ion-card-subtitle>
+      <ion-card-title>HarDisk</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+
+    <ion-card-content>
+      
+      <ion-item detail="true" [routerLink]="['/login']">
+        <ion-label>Login</ion-label>
+        <ion-icon name="person" slot="start" ></ion-icon>
+      </ion-item>
+
+      <ion-item detail="true" [routerLink]="['/contactos']">
+        <ion-label>Contacto</ion-label>
+        <ion-icon name="people" slot="start" ></ion-icon>
+      </ion-item>
+
+      <ion-item detail="true" [routerLink]="['/resultados']">
+        <ion-label>Resultados</ion-label>
+        <ion-icon name="book" slot="start" ></ion-icon>
+      </ion-item>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>
